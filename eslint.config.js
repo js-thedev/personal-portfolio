@@ -34,6 +34,9 @@ export default [
 
       // Prettier integration
       'prettier/prettier': 'error',
+
+      // Disable the rule that requires React in scope
+      'react/react-in-jsx-scope': 'off',
     },
     settings: {
       'import/resolver': {
