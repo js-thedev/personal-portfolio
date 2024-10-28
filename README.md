@@ -1,2 +1,3 @@
 # personal-portfolio
-Personal portfolio website
+
+Personal portfolio website created with HTML, CSS, and React.

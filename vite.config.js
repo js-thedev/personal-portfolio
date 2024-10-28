@@ -7,24 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-  plugins: [
-    react({
-      babel: {
-        presets: ['@babel/preset-react'],
-        plugins: [
-          [
-            'module-resolver',
-            {
-              root: ['./'],
-              alias: {
-                '@': resolve(__dirname, './src'),
-              },
-            },
-          ],
-        ],
-      },
-    }),
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
