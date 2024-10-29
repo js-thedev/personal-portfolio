@@ -1,19 +1,23 @@
 import '@/App.scss';
-import profile from '@/assets/Landing-Profile.jpg';
+
+import LandingPage from '@/pages/index.jsx';
+import NavBar from '@/components/header/nav-bar/index.jsx';
 
 function App() {
+  // TODO: Remove when we implement router
+  const test = 1;
+
   return (
     <div className="app">
-      <div className="Nav">Navigation Bar Spaceholder</div>
-      <img src={profile} alt="Landing-Profile.jpg"></img>
-      <div className="text-container">
-        <div className="name">SCOTT PARK</div>
-        <div className="role">DEV-OPS ENGINEER</div>
-        <div className="summary">
-          BUILDS AUTOMATION TO OPTIMIZE SOFTWARE DEVELOPMENT AND DEPLOYMENT
-          PROCESSES
-        </div>
-      </div>
+      <NavBar />
+      {/* TODO: Replace fake router when we implement router */}
+      {test === 1 ? (
+        <LandingPage />
+      ) : test === 2 ? (
+        <LandingPage />
+      ) : (
+        <LandingPage />
+      )}
     </div>
   );
 }
