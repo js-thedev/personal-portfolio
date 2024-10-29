@@ -3,10 +3,11 @@ import '@/App.scss';
 import NavBar from '@/components/header/nav-bar/index.jsx';
 
 import LandingPage from '@/pages/index.jsx';
+import About from '@/pages/about/index.jsx';
 
 function App() {
   // TODO: Remove when we implement router
-  const test = 1;
+  const test = 2;
 
   return (
     <div className="app">
@@ -15,7 +16,11 @@ function App() {
       {test === 1 ? (
         <LandingPage />
       ) : test === 2 ? (
-        <LandingPage />
+        <About />
+      ) : test === 3 ? (
+        <About />
+      ) : test === 4 ? (
+        <About />
       ) : (
         <LandingPage />
       )}
