@@ -1,7 +1,8 @@
 import '@/App.scss';
 
-import LandingPage from '@/pages/index.jsx';
 import NavBar from '@/components/header/nav-bar/index.jsx';
+
+import LandingPage from '@/pages/index.jsx';
 
 function App() {
   // TODO: Remove when we implement router
