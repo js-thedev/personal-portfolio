@@ -10,7 +10,7 @@ import Skills from '@/pages/skills/index.jsx';
 
 function App() {
   // TODO: Remove when we implement router
-  const test = 4;
+  const test = 1;
 
   return (
     <div className="app">
