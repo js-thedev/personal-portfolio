@@ -5,10 +5,12 @@ import NavBar from '@/components/header/nav-bar/index.jsx';
 import LandingPage from '@/pages/index.jsx';
 import About from '@/pages/about/index.jsx';
 import Contact from '@/pages/contact/index.jsx';
+import Projects from '@/pages/projects/index.jsx';
+import Skills from '@/pages/skills/index.jsx';
 
 function App() {
   // TODO: Remove when we implement router
-  const test = 3;
+  const test = 4;
 
   return (
     <div className="app">
@@ -21,7 +23,9 @@ function App() {
       ) : test === 3 ? (
         <Contact />
       ) : test === 4 ? (
-        <About />
+        <Projects />
+      ) : test === 5 ? (
+        <Skills />
       ) : (
         <LandingPage />
       )}
