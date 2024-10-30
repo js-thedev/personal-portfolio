@@ -1,4 +1,4 @@
-import '@/App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import NavBar from '@/components/header/nav-bar/index.jsx';
 
@@ -9,26 +9,14 @@ import Projects from '@/pages/projects/index.jsx';
 import Skills from '@/pages/skills/index.jsx';
 
 function App() {
-  // TODO: Remove when we implement router
-  const test = 1;
-
   return (
-    <div className="app">
+    <div>
       <NavBar />
-      {/* TODO: Replace fake router when we implement router */}
-      {test === 1 ? (
-        <LandingPage />
-      ) : test === 2 ? (
-        <About />
-      ) : test === 3 ? (
-        <Contact />
-      ) : test === 4 ? (
-        <Projects />
-      ) : test === 5 ? (
-        <Skills />
-      ) : (
-        <LandingPage />
-      )}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
