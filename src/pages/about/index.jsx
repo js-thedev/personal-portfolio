@@ -3,17 +3,18 @@ import '@/pages/about/index.scss';
 
 function About() {
   return (
-    <div className="about">
+    <div className="about page">
       <div className="education">
+        <div className="section-title">Education</div>
         <div className="university">University of Toronto</div>
         <div className="degree">BASc in Industrial Engineering</div>
         <div className="education-years">2014-2019</div>
       </div>
       <div className="work-experiences">
+        <div className="section-title">Experience</div>
         <div className="work-experience">
           <div className="job-years">2022 - Present</div>
-          <div className="company-name">SAS</div>
-          <div className="job-title">DevOps Engineer</div>
+          <div className="job-title">DevOps Engineer · SAS</div>
           <div className="job-descriptions">
             <div className="job-description">
               Responsible for deriving and deploying client-specific solutions,
@@ -36,9 +37,10 @@ function About() {
           </div>
         </div>
         <div className="work-experience">
-          <div className="job-years">2022 - Present</div>
-          <div className="company-name">Toronto Hydro</div>
-          <div className="job-title">Software Engineering Intern</div>
+          <div className="job-years">2017-2018</div>
+          <div className="job-title">
+            Software Engineering Intern · Toronto Hydro
+          </div>
           <div className="job-descriptions">
             <div className="job-description">
               Implemented an automation tool that automatically categorizes
