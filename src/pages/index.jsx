@@ -5,7 +5,7 @@ import landingProfileImg from '@/assets/Landing-Profile.jpg';
 
 function LandingPage() {
   return (
-    <div className="landing-page">
+    <div className="landing-page page">
       <img
         className="full-width-img"
         src={landingProfileImg}
