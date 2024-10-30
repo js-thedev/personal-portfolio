@@ -1,2 +1,9 @@
 .contact {
+  a {
+    margin-top: 13px;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+  }
 }
