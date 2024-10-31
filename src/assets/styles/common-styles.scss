@@ -1,3 +1,13 @@
 .full-width-img {
   width: 100%;
 }
+
+.normalLink {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
