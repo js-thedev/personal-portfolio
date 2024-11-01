@@ -3,8 +3,8 @@
 }
 
 .square-img {
-  width: calc((100vw - 50px) / 2);
-  height: calc((100vw - 50px) / 2);
+  width: calc((70vw - 40px) / 5);
+  height: calc((70vw - 40px) / 5);
 }
 
 .normal-link {
@@ -14,5 +14,12 @@
 
   &:hover {
     font-weight: 500;
+  }
+}
+
+@media (max-width: 1023px) {
+  .square-img {
+    width: calc((100vw - 50px) / 2);
+    height: calc((100vw - 50px) / 2);
   }
 }

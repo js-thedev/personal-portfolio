@@ -1,6 +1,15 @@
 .project {
   .project-name {
-    width: calc((100vw - 50px) / 2);
+    width: calc((70vw - 40px) / 5);
     margin-top: 10px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .project {
+    .project-name {
+      width: calc((100vw - 50px) / 2);
+    }
   }
 }
