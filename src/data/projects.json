@@ -1,0 +1,13 @@
+[
+  {
+    "id": "stock-investment-advisor",
+    "name": "Stock Investment Advisor Web App",
+    "image": "src/assets/images/projects/stock-investment-adivsor.webp",
+    "descriptions": [
+      "Monolith architecture, FastAPI for RESTful endpoints",
+      "Vue.js framework to design and implement the frontend UI",
+      "Django framework to handle data collection, processing, and model training"
+    ],
+    "github": "https://github.com/js-thedev/stock-investor"
+  }
+]

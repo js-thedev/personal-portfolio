@@ -8,7 +8,7 @@ import Contact from '@/pages/contact/index.jsx';
 import Projects from '@/pages/projects/index.jsx';
 import Skills from '@/pages/skills/index.jsx';
 
-import StockInvestmentAdvisor from '@/pages/projects/projects-list/stock-investment-advisor/index.jsx';
+import ProjectDetail from '@/pages/projects/project-detail/index.jsx';
 
 function App() {
   return (
@@ -20,10 +20,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
-          <Route
-            path="/stock-investment-advisor"
-            element={<StockInvestmentAdvisor />}
-          />
+          {/* <Route
+            path="/projects/:projectName"
+            element={<ProjectDetail />}
+          /> */}
+          <Route path="/ProjectDetail" element={<ProjectDetail />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </BrowserRouter>
