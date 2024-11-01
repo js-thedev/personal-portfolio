@@ -20,11 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
-          {/* <Route
-            path="/projects/:projectName"
-            element={<ProjectDetail />}
-          /> */}
-          <Route path="/ProjectDetail" element={<ProjectDetail />} />
+          <Route path="/projects/:projectId" element={<ProjectDetail />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </BrowserRouter>

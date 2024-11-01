@@ -1,3 +1,5 @@
+import { useParams } from 'react-router-dom';
+
 import '@/pages/index.scss';
 import '@/pages/projects/project-detail/index.scss';
 
@@ -5,9 +7,8 @@ import projects from '@/data/projects.json';
 
 function ProjectDetail() {
   // TODO: Implement useParams
-  // const { id } = useParams();
-  const id = 'stock-investment-advisor';
-  const project = projects.find((proj) => proj.id === id);
+  const { projectId } = useParams();
+  const project = projects.find((proj) => proj.id === projectId);
 
   if (!project) {
     return <div>Project not found.</div>;
