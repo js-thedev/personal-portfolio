@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.square-img {
+  width: calc((100vw - 50px) / 2);
+  height: calc((100vw - 50px) / 2);
+}
+
 .normalLink {
   text-decoration: none;
   color: black;

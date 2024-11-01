@@ -1,2 +1,19 @@
 .projects {
+  margin-top: 10px;
+  font-size: 12px;
+
+  .page-name {
+    font-weight: 900;
+  }
+
+  .projects-list {
+    margin-top: 20px;
+
+    .project {
+      .project-name {
+        width: calc((100vw - 50px) / 2);
+        margin-top: 10px;
+      }
+    }
+  }
 }
