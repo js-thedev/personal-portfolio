@@ -25,7 +25,7 @@ function ProjectDetail() {
           </div>
         ))}
       </div>
-      <a className="normalLink" href={project.github}>
+      <a className="normal-link" href={project.github}>
         Find this project at github
       </a>
     </div>

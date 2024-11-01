@@ -6,12 +6,12 @@ function Contact() {
     <div className="contact page">
       <div className="contact-list">
         <a
-          className="normalLink"
+          className="normal-link"
           href="https://www.linkedin.com/in/jongseoscottpark/"
         >
           LinkedIn
         </a>
-        <a className="normalLink" href="https://github.com/js-thedev">
+        <a className="normal-link" href="https://github.com/js-thedev">
           Github
         </a>
       </div>
