@@ -1,11 +1,11 @@
 import '@/pages/index.scss';
 import '@/assets/styles/common-styles.scss';
 
-import landingProfileImg from '@/assets/Landing-Profile.jpg';
+import landingProfileImg from '@/assets/images/Landing-Profile.jpg';
 
 function LandingPage() {
   return (
-    <div className="landing-page">
+    <div className="landing-page page">
       <img
         className="full-width-img"
         src={landingProfileImg}

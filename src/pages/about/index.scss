@@ -1,2 +1,29 @@
 .about {
+  .section-title {
+    font-weight: 900;
+  }
+
+  .education {
+    * {
+      margin-top: 13px;
+    }
+  }
+
+  .work-experiences {
+    * {
+      margin-top: 13px;
+    }
+
+    .job-title {
+      font-weight: 500;
+    }
+
+    .job-years {
+      color: darkgray;
+    }
+
+    .job-description {
+      color: gray;
+    }
+  }
 }

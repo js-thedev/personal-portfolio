@@ -1,0 +1,25 @@
+.projects {
+  margin-top: 10px;
+  font-size: 12px;
+
+  .page-name {
+    font-weight: 900;
+  }
+
+  .projects-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .projects {
+    .projects-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
