@@ -18,14 +18,15 @@ function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Functions
+  const calculateIsMobile = () => {
+    setIsMobile(window.innerWidth < DESKTOP_DIMENSION);
+  };
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
-  };
-  const calculateIsMobile = () => {
-    setIsMobile(window.innerWidth < DESKTOP_DIMENSION);
   };
 
   /*
