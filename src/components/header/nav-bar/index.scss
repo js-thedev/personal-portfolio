@@ -1,16 +1,16 @@
 .nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   width: 100vw;
   height: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   font-weight: 500;
+  background-color: white;
   display: grid;
   grid-template-columns: calc(15vw - 20px) 70vw calc(15vw - 20px);
-
-  * {
-    justify-self: left;
-    align-self: center;
-  }
+  align-items: center;
 
   .home-container {
     .home {
@@ -21,12 +21,42 @@
   }
   .nav-link-container {
     * {
-      padding-left: 2%;
-      padding-right: 8%;
+      padding-left: 1px;
+      padding-right: 29px;
     }
   }
   .hamburger {
     display: none;
+    font-size: 25px;
+    justify-self: end;
+    padding-right: 1px;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+
+    .nav-link {
+      font-size: 14px;
+      padding: 5px 20px;
+    }
+  }
+  &.mobile-menu-active .mobile-menu {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -37,10 +67,10 @@
       display: none;
     }
     .hamburger {
-      font-size: 25px;
-      justify-self: end;
-      padding-right: 1px;
       display: block;
+    }
+    .mobile-menu {
+      display: flex; // Show mobile menu when active
     }
   }
 }
