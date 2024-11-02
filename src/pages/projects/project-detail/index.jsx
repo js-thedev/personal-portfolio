@@ -6,7 +6,6 @@ import '@/pages/projects/project-detail/index.scss';
 import projects from '@/data/projects.json';
 
 function ProjectDetail() {
-  // TODO: Implement useParams
   const { projectId } = useParams();
   const project = projects.find((proj) => proj.id === projectId);
 

@@ -1,4 +1,46 @@
 .nav-bar {
   width: 100vw;
   height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: calc(15vw - 20px) 70vw calc(15vw - 20px);
+
+  * {
+    justify-self: left;
+    align-self: center;
+  }
+
+  .home-container {
+    .home {
+      padding-left: 1px;
+      font-weight: 700;
+      font-size: 22px;
+    }
+  }
+  .nav-link-container {
+    * {
+      padding-left: 2%;
+      padding-right: 8%;
+    }
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav-bar {
+    grid-template-columns: 50% 50%;
+    .nav-link-container {
+      display: none;
+    }
+    .hamburger {
+      font-size: 25px;
+      justify-self: end;
+      padding-right: 1px;
+      display: block;
+    }
+  }
 }
