@@ -13,8 +13,8 @@ import ProjectDetail from '@/pages/projects/project-detail/index.jsx';
 function App() {
   return (
     <div>
-      <NavBar />
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
